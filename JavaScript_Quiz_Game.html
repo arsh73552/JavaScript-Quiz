@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="120">
+    <title></title>
+  </head>
+
+  <script src="My_Java_Script.js"> </script>
+  <link rel = "stylesheet" href = "JavaScript_Quiz_Game.css">
+
+  <body id="switch">
+
+    <div class = "marquee" style = "background-color: red;">
+      <marquee onmouseover = "this.stop()" onmouseout="this.start()" width="100%" direction="right"style="color: white" scrollamount="20">
+        <p>The Page auto-refreshes when the time runs out!</p>
+      </marquee>
+    </div>
+    <div class="warning">
+      <b id = "warning_text">Do not switch browser tabs further resistance will lead to disqualification</b> 
+    </div>
+
+    <div id="stopwatch">
+      00:02:00
+    </div>
+
+    <div style = "text-align: center;">
+      <button id = "button1" type="button" name="button" onclick="DarkMode()">Light Mode!</button>
+      <button type="button" onclick="FontInc()">Click To increase font!</button>
+      <button type="button" onclick="FontDec()">Click To decrease font!</button>
+    </div>
+
+    <div class="Question">
+        <pre>
+
+1.
+  #include &lt;iostream.h&gt;
+  #include &lt;string.h&gt;
+  using namespace std;
+  class A{
+  	mutable int a;
+  public:
+  	A(){
+  		cout&lt;&lt;"A's Constructor called\n";
+  	}
+  	~A(){
+  		cout&lt;&lt;"A's Destructor called\n";
+  	}
+  };
+  class B{
+  	A a;
+  public:
+  	B(){
+  		cout&lt;&lt;"B's Constructor called\n";
+  	}
+  	~B(){
+  		cout&lt;&lt;"B's Destructor called\n";
+  	}
+  };
+  int main(int argc, char const *argv[])
+  {
+  	B b1;
+  }
+        </pre>
+  <div class="border"></div>
+        1.<input type="radio" name="123" id = "Q1O1"><br>
+
+            <pre>
+    A's Constructor called
+    B's Constructor called
+            </pre>
+
+        2.<input type="radio" name="123" id = "Q1O2"><br>
+          <pre>
+    A's Destructor called
+    B's Destructor called
+          </pre>
+        3.<input type="radio" name="123" id = "Q1O3"><br>
+          <pre>
+    A's Constructor called
+    B's Constructor called
+    B's Destructor called
+    A's Destructor called
+          </pre>
+        4.<input type="radio" name="123" id = "Q1O4"><br>
+          <pre>
+    A's Constructor called
+    B's Constructor called
+    A's Destructor called
+    B's Destructor called
+          </pre>
+    </div>
+
+    <br>
+
+    <div class="Question">
+      <pre>
+2.
+  #include &lt;iostream.h&gt;
+  #include &lt;string.h&gt;
+  using namespace std;
+  class A{
+  	mutable int a;
+  public:
+  	A(){
+  		cout<<"A's Constructor called\n";
+  	}
+  	~A(){
+  		cout<<"A's Destructor called\n";
+  	}
+  };
+  class B: public A{
+  public:
+  	B(){
+  		cout<<"B's Constructor called\n";
+  	}
+  	~B(){
+  		cout<<"B's Destructor called\n";
+  	}
+  };
+  int main(int argc, char const *argv[])
+  {
+  	B b1;
+  }
+      </pre>
+  <div class="border"></div>
+    1.<input type="radio" name="234" id = "Q2O1"><br>
+        <pre>
+    A's Constructor called
+    B's Constructor called
+        </pre>
+
+    2.<input type="radio" name="234" id = "Q2O2"><br>
+      <pre>
+    A's Destructor called
+    B's Destructor called
+      </pre>
+
+    3.<input type="radio" name="234" id = "Q2O3"><br>
+      <pre>
+    A's Constructor called
+    B's Constructor called
+    B's Destructor called
+    A's Destructor called
+      </pre>
+
+    4.<input type="radio" name="234" id = "Q2O4"><br>
+      <pre>
+    A's Constructor called
+    B's Constructor called
+    A's Destructor called
+    B's Destructor called
+      </pre>
+
+    </div>
+    <br>
+    <div class="Question">
+      <pre>
+3.
+  #include &lt;iostream.h&gt;
+  #include &lt;stringh&gt;
+  using namespace std;
+  class A{
+  	mutable int a;
+  public:
+  	A(){
+  		cout<<"A's Constructor called\n";
+  	}
+  	~A(){
+  		cout<<"A's Destructor called\n";
+  	}
+  };
+  class B: public A{
+  	A a;
+  public:
+  	B(){
+  		cout<<"B's Constructor called\n";
+  	}
+  	~B(){
+  		cout<<"B's Destructor called\n";
+  	}
+  };
+  int main(int argc, char const *argv[])
+  {
+  	B b1;
+  }
+    </pre>
+  <div class="border"></div>
+  1.<input type="radio" name="345" id = "Q3O1"><br>
+        <pre>
+    A's Constructor called
+    B's Constructor called
+        </pre>
+
+  2.<input type="radio" name="345" id = "Q3O2"><br>
+      <pre>
+    A's Destructor called
+    B's Destructor called
+      </pre>
+
+  3.<input type="radio" name="345" id = "Q3O3"><br>
+        <pre>
+    A's Constructor called
+    A's Constructor called
+    B's Constructor called
+    B's Destructor called
+    A's Destructor called
+    A's Destructor called
+        </pre>
+
+  4.<input type="radio" name="345" id = "Q3O4"><br>
+        <pre>
+    A's Constructor called
+    B's Constructor called
+    A's Destructor called
+    B's Destructor called
+        </pre>
+
+    </div>
+    <br>
+
+    <div class="Question">
+      <pre>
+4.
+  #include &lt;iostream.h&gt;
+  #include &lt;string.h&gt;
+  using namespace std;
+  class A{
+  	mutable int a;
+  public:
+  	A(){
+  		cout<<"A's Constructor called\n";
+  	}
+  	~A(){
+  		cout<<"A's Destructor called\n";
+  	}
+  };
+  class B{
+  	static A a;
+  public:
+  	B(){
+  		cout<<"B's Constructor called\n";
+  	}
+  	~B(){
+  		cout<<"B's Destructor called\n";
+  	}
+  };
+  int main(int argc, char const *argv[])
+  {
+  	B b1;
+  }
+      </pre>
+  <div class="border"></div>
+      1.<input type="radio" name="456" id = "Q4O1"><br>
+          <pre>
+      A's Constructor called
+      B's Constructor called
+          </pre>
+
+      2.<input type="radio" name="456" id = "Q4O2"><br>
+        <pre>
+      B's Constructor called
+      B's Destructor called
+        </pre>
+
+      3.<input type="radio" name="456" id = "Q4O3"><br>
+        <pre>
+      A's Constructor called
+      B's Constructor called
+      B's Destructor called
+      A's Destructor called
+        </pre>
+
+      4.<input type="radio" name="456" id = "Q4O4"><br>
+        <pre>
+      A's Constructor called
+      B's Constructor called
+      A's Destructor called
+      B's Destructor called
+        </pre>
+
+    </div>
+    <br>
+
+    <div class="Question">
+      <pre>
+5.
+  #include &lt;iostream.h&gt;
+  #include &lt;string.h&gt;
+  using namespace std;
+  class A{
+  	mutable int a;
+  public:
+  	A(){
+  		cout<<"A's Constructor called\n";
+  	}
+  	~A(){
+  		cout<<"A's Destructor called\n";
+  	}
+  };
+
+  class B{
+  	static A a;
+  public:
+  	B(){
+  		cout<<"B's Constructor called\n";
+  	}
+  	~B(){
+  		cout<<"B's Destructor called\n";
+  	}
+  };
+
+  A B::a;
+
+  int main(int argc, char const *argv[])
+  {
+  	return 0;
+  }
+      </pre>
+  <div class="border"></div>
+      1.<input type="radio" name="567" id = "Q5O1"><br>
+          <pre>
+      A's Constructor called
+      B's Destructor called
+          </pre>
+
+      2.<input type="radio" name="567" id = "Q5O2"><br>
+        <pre>
+      B's Constructor called
+      B's Destructor called
+        </pre>
+
+      3.<input type="radio" name="567" id = "Q5O3"><br>
+        <pre>
+      A's Constructor called
+      B's Constructor called
+      B's Destructor called
+      A's Destructor called
+        </pre>
+
+      4.<input type="radio" name="567" id = "Q5O4"><br>
+        <pre>
+      A's Constructor called
+      B's Constructor called
+      A's Destructor called
+      B's Destructor called
+        </pre>
+
+    </div>
+    <br>
+    <button type="submit" onclick="Calc_Score()">Submit!</button>
+  </body>
+</html>
