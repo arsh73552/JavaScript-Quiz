@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Score!</title>
+  </head>
+
+  <link rel = "stylesheet" href = "Scoresheet.css">
+  <script src="ScoreSheet.js"> </script>
+
+  <body>
+    <h1>Your Score: </h1>
+
+    <div id = "Question1">
+        <pre>
+          1.
+            #include &lt;iostream.h&gt;
+            #include &lt;string.h&gt;
+            using namespace std;
+            class A{
+            	mutable int a;
+            public:
+            	A(){
+            		cout&lt;&lt;"A's Constructor called\n";
+            	}
+            	~A(){
+            		cout&lt;&lt;"A's Destructor called\n";
+            	}
+            };
+            class B{
+            	A a;
+            public:
+            	B(){
+            		cout&lt;&lt;"B's Constructor called\n";
+            	}
+            	~B(){
+            		cout&lt;&lt;"B's Destructor called\n";
+            	}
+            };
+            int main(int argc, char const *argv[])
+            {
+            	B b1;
+            }
+
+        </pre>
+    </div>
+    <br>
+    <div id = "Question2">
+      <pre>
+        2.
+          #include &lt;iostream.h&gt;
+          #include &lt;string.h&gt;
+          using namespace std;
+          class A{
+          	mutable int a;
+          public:
+          	A(){
+          		cout<<"A's Constructor called\n";
+          	}
+          	~A(){
+          		cout<<"A's Destructor called\n";
+          	}
+          };
+          class B: public A{
+          public:
+          	B(){
+          		cout<<"B's Constructor called\n";
+          	}
+          	~B(){
+          		cout<<"B's Destructor called\n";
+          	}
+          };
+          int main(int argc, char const *argv[])
+          {
+          	B b1;
+          }
+      </pre>
+    </div>
+    <br>
+    <div id = "Question3">
+      <pre>
+        3.
+          #include &lt;iostream.h&gt;
+          #include &lt;stringh&gt;
+          using namespace std;
+          class A{
+          	mutable int a;
+          public:
+          	A(){
+          		cout<<"A's Constructor called\n";
+          	}
+          	~A(){
+          		cout<<"A's Destructor called\n";
+          	}
+          };
+          class B: public A{
+          	A a;
+          public:
+          	B(){
+          		cout<<"B's Constructor called\n";
+          	}
+          	~B(){
+          		cout<<"B's Destructor called\n";
+          	}
+          };
+          int main(int argc, char const *argv[])
+          {
+          	B b1;
+          }
+      </pre>
+    </div>
+    <br>
+    <div id = "Question4">
+      <pre>
+        4.
+          #include &lt;iostream.h&gt;
+          #include &lt;string.h&gt;
+          using namespace std;
+          class A{
+          	mutable int a;
+          public:
+          	A(){
+          		cout<<"A's Constructor called\n";
+          	}
+          	~A(){
+          		cout<<"A's Destructor called\n";
+          	}
+          };
+          class B{
+          	static A a;
+          public:
+          	B(){
+          		cout<<"B's Constructor called\n";
+          	}
+          	~B(){
+          		cout<<"B's Destructor called\n";
+          	}
+          };
+          int main(int argc, char const *argv[])
+          {
+          	B b1;
+          }
+      </pre>
+    </div>
+    <br>
+    <div id = "Question5">
+      <pre>
+        5.
+          #include &lt;iostream.h&gt;
+          #include &lt;string.h&gt;
+          using namespace std;
+          class A{
+          	mutable int a;
+          public:
+          	A(){
+          		cout<<"A's Constructor called\n";
+          	}
+          	~A(){
+          		cout<<"A's Destructor called\n";
+          	}
+          };
+
+          class B{
+          	static A a;
+          public:
+          	B(){
+          		cout<<"B's Constructor called\n";
+          	}
+          	~B(){
+          		cout<<"B's Destructor called\n";
+          	}
+          };
+
+          A B::a;
+
+          int main(int argc, char const *argv[])
+          {
+          	return 0;
+          }
+      </pre>
+    </div>
+
+  </body>
+</html>

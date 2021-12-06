@@ -2,6 +2,7 @@ var num = 0;
 time = 120;
 var warning = 0;
 var score = 0;
+var correctquestions = [0,0,0,0,0];
 
 var interval = setInterval(change_time, 1000);
 var len = document.querySelectorAll('.Question').length;
@@ -98,16 +99,20 @@ function FontDec()
 function Calc_Score()
 {
   if(document.getElementById("Q1O3").checked)
-    ++score;
+    ++correctquestions[0];
   if(document.getElementById("Q2O3").checked)
-    ++score;
+    ++correctquestions[1];
   if(document.getElementById("Q3O3").checked)
-    ++score;
+    ++correctquestions[2];
   if(document.getElementById("Q4O2").checked)
-    ++score;
+    ++correctquestions[3];
   if(document.getElementById("Q5O1").checked)
-    ++score;
+    ++correctquestions[4];
+  for(var i = 0; i < 5; ++i)
+    score = score + correctquestions[i];
   document.location.href = 'ScoreSheet.html';
+  localStorage.setItem('Score', score);
+  localStorage.setItem('QuestionReport', correctquestions);
 }
 function warning_func()
 {
