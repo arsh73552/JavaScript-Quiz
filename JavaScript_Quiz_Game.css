@@ -4,6 +4,26 @@
   color: white;
   background-color: rgb(50,40,40);
 }
+.NavBar {
+  width: 200px;
+  background-color: #eee;
+  position: fixed;
+  right: 0px;
+  top: 140px;
+}
+.NavBar a
+{
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+}
+.NavBar a:hover
+{
+  background-color: green;
+}
+
 body
 {
   background: black;

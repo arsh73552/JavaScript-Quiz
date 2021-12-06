@@ -11,11 +11,13 @@
 
   <body id="switch">
 
+
     <div class = "marquee" style = "background-color: red;">
       <marquee onmouseover = "this.stop()" onmouseout="this.start()" width="100%" direction="right"style="color: white" scrollamount="20">
         <p>The Page auto-refreshes when the time runs out!</p>
       </marquee>
     </div>
+
     <div class="warning">
       <b id = "warning_text">Do not switch browser tabs further resistance will lead to disqualification</b>
     </div>
@@ -30,7 +32,16 @@
       <button type="button" onclick="FontDec()">Click To decrease font!</button>
     </div>
 
-    <div class="Question">
+    <div class = "NavBar">
+      <a href="#Question1">Question 1</a></li> <br>
+      <a href="#Question2">Question 2</a></li> <br>
+      <a href="#Question3">Question 3</a></li> <br>
+      <a href="#Question4">Question 4</a></li> <br>
+      <a href="#Question5">Question 5</a></li> 
+    </div>
+
+
+    <div class="Question" id = "Question1">
         <pre>
 
 1.
@@ -93,7 +104,7 @@
 
     <br>
 
-    <div class="Question">
+    <div class="Question" id = "Question2">
       <pre>
 2.
   #include &lt;iostream.h&gt;
@@ -154,7 +165,7 @@
 
     </div>
     <br>
-    <div class="Question">
+    <div class="Question" id = "Question3">
       <pre>
 3.
   #include &lt;iostream.h&gt;
@@ -219,7 +230,7 @@
     </div>
     <br>
 
-    <div class="Question">
+    <div class="Question" id = "Question4">
       <pre>
 4.
   #include &lt;iostream.h&gt;
@@ -282,7 +293,7 @@
     </div>
     <br>
 
-    <div class="Question">
+    <div class="Question" id = "Question5">
       <pre>
 5.
   #include &lt;iostream.h&gt;

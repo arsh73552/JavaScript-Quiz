@@ -1,5 +1,5 @@
 var num = 0;
-time = 120;
+time = 10;
 var warning = 0;
 var score = 0;
 var correctquestions = [0,0,0,0,0];
@@ -14,7 +14,8 @@ function change_time()
       document.querySelector('marquee').innerHTML = "Page Refreshes in : " + toformat(time)  + 's';
     if(time===0)
     {
-      document.location.href = 'https://www.google.com/';
+      Calc_Score();
+      document.location.href = 'Scoresheet.html';
     }
     window.onblur = warning_func;
     window.onfocus = () => {
